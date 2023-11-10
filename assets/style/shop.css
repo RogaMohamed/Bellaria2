@@ -1,0 +1,114 @@
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none !important;
+}
+:root {
+    --greenish: #5cd19ccc;
+    --darkteal:#5eb8c0;
+    --mint:#82d5af;
+    --limeyellow: #d1f16a;
+    --darky: #4b4342;
+    --pinky: #ff91a4 ;
+}
+@font-face {
+    font-family:lecker ;
+    src: url(../fonts/LeckerliOne-Regular.ttf);
+}
+@font-face {
+    font-family: merinda;
+    src: url(../fonts/Merienda-SemiBold.ttf);
+}
+.top_nav li a {
+    color: #4b4342;
+}
+.top_nav li a:active {
+    color: #5eb8c0 !important;
+}
+.shopContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 45.5%;
+    top: 40%;
+    color: #fff;
+}
+.shopTitle img {
+    position: absolute;
+    top: 16%;
+    height: 60vh;
+}
+.shopContainer h2{
+    font-family: merinda;
+    font-size: 50px;
+}
+/* products */
+.products {
+    position: absolute;
+    top: 90%;
+    font-family: merinda;
+}
+.ShowingResult {
+    padding-left: 10%;
+}
+.ShowingResult i{
+    color: #ff91a4;
+    padding-right: 0.5rem;
+}
+.icons {
+    color: goldenrod;
+}
+.container{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    gap: 3rem;
+}
+.container img{
+    border-radius: 1rem;
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+}
+.product {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.product h3 {
+    padding-top: 2rem;
+}
+.product .btn {
+    position: absolute;
+    background-color: #fff;
+    color: #4b4342;
+    visibility: hidden;
+    transition: 0.7s;
+}
+.product img:hover.btn{
+    visibility: visible;
+}
+.product .btn:hover {
+    background-color:#4b4342;
+    color: #fff;
+    transition: 0.7s;
+}
+footer .shop{
+    position: absolute;
+    bottom: 100%;
+}
